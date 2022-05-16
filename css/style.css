@@ -1,0 +1,45 @@
+body{
+    font-family: 'ssf4', Courier, monospace;
+    background: var(--cor-secundaria);
+}
+
+body::before{ /*pseudo elemento, mostra que antes dele haverá algo*/
+    content: '';
+    background-image: url("../imagens/fundo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; /* tira o elemento do fluxo da página, utilizado tb para posicionar um elemento em cima do outro*/
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 100px;
+    -webkit-text-stroke:2px var(--cor-titulo-forte); 
+}
+
+.selecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personagem-grande{
+    text-align: center;
+    width: 30%;
+    
+}
